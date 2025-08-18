@@ -1,0 +1,74 @@
+{
+  "name": "@maxkapral/validate-cdk-state-machines",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf dist node_modules tsconfig.json pacmak",
+    "build": "jsii && node build/post_build.js",
+    "package": "jsii-pacmak"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kapral67/ValidateCdkStateMachines.git"
+  },
+  "keywords": [],
+  "author": "Max Kapral",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kapral67/ValidateCdkStateMachines/issues"
+  },
+  "homepage": "https://github.com/Kapral67/ValidateCdkStateMachines#readme",
+  "devDependencies": {
+    "aws-cdk-lib": "2.168.0",
+    "constructs": "10.0.0",
+    "jsii": "^5.9.2",
+    "jsii-pacmak": "^1.113.0",
+    "typescript": "^5.9.2"
+  },
+  "stability": "experimental",
+  "types": "dist/index.d.ts",
+  "jsii": {
+    "versionFormat": "short",
+    "targets": {
+      "java": {
+        "package": "com.maxkapral.validatecdkstatemachines",
+        "maven": {
+          "groupId": "com.maxkapral",
+          "artifactId": "validate-cdk-state-machines"
+        }
+      },
+      "python": {
+        "distName": "maxkapral.validate_cdk_state_machines",
+        "module": "maxkapral.validate_cdk_state_machines"
+      },
+      "dotnet": {
+        "namespace": "MaxKapral.ValidateCdkStateMachines",
+        "packageId": "MaxKapral.ValidateCdkStateMachines"
+      },
+      "go": {
+        "packageName": "validatecdkstatemachines",
+        "moduleName": "github.com/kapral67/validatecdkstatemachines"
+      }
+    },
+    "tsc": {
+      "outDir": "dist"
+    },
+    "outdir": "pacmak"
+  },
+  "dependencies": {
+    "@aws-cdk/cli-plugin-contract": "^2.181.1",
+    "@aws-cdk/toolkit-lib": "^1.5.0",
+    "@aws-sdk/client-sfn": "^3.642.0"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": "^2.168.0",
+    "constructs": "^10.0.0"
+  },
+  "bundleDependencies": [
+    "@aws-cdk/cli-plugin-contract",
+    "@aws-cdk/toolkit-lib",
+    "@aws-sdk/client-sfn"
+  ]
+}
